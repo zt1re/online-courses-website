@@ -1,0 +1,89 @@
+.card:nth-child(1n+4) {
+    display: none;
+}
+
+.cards {
+    width: 357px;
+    height: 94px;
+    background-color: var(--clr-white100);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border: 1px solid rgb(238, 237, 237);
+}
+
+.card:nth-child(2n) {
+    border-left: 1px solid rgb(238, 237, 237);
+    border-right: 1px solid rgb(238, 237, 237);
+}
+
+.card {
+    width: 33%;
+    height: 64px;
+}
+
+@media (min-width: 640px) {
+    .card:nth-child(4n) {
+        display: block;
+    }
+
+    .card {
+        width: 25%;
+        height: 65px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card:nth-child(5n) {
+        display: block;
+    }
+
+    .card {
+        width: 20%;
+        height: 66px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card:nth-child(6n) {
+        display: block;
+    }
+
+    .card {
+        width: 16.66%;
+        height: 67px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .card:nth-child(7n) {
+        display: block;
+    }
+
+    .cards {
+        width: 1279px;
+        height: 116px;
+    }
+
+    .card {
+        width: 14.28%;
+        height: 68px;
+    }
+}
+
+@media (min-width: 1860px) {
+    .cards {
+        width: 1595px;
+        height: 154px;
+    }
+
+    .card {
+        height: 94px;
+    }
+}
+
+
+
