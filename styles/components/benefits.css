@@ -22,6 +22,10 @@
     font-weight: bold;
 }
 
+.benefits-section2 {
+    margin-top: 40px;
+}
+
 .benefint-box:nth-child(1n+5) {
     display: none;
 }
@@ -156,7 +160,7 @@
         'box1 box2 box3'
         'box4 box5 box6';
         gap: 10px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .benefint-box {
@@ -190,6 +194,10 @@
         font-size: var(--size-lg);
         width:130px;
         height: 45px;
+    }
+
+    .benefits-section2 {
+        margin-top: 80px;
     }
 
     .benefint-box {
