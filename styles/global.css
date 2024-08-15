@@ -157,3 +157,19 @@ body::-webkit-scrollbar {
     background-color: var(--clr-slate50);
     outline: 1px solid --clr-slate50;
   }
+
+  .fadeIn {
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
