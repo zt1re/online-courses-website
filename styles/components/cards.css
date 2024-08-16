@@ -3,14 +3,14 @@
 }
 
 .cards {
-    width: 357px;
+    width: 90%;
+    margin: 50px auto;
     height: 94px;
     background-color: var(--clr-white100);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
     border: 1px solid rgb(238, 237, 237);
 }
 
@@ -32,6 +32,13 @@
     .card {
         width: 25%;
         height: 65px;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .cards {
+        margin-top: 60px;
     }
 }
 
@@ -59,12 +66,15 @@
 
 
 @media (min-width: 1400px) {
+    .cards {
+        margin-top: 70px;
+    }
+
     .card:nth-child(7n) {
         display: block;
     }
 
     .cards {
-        width: 1279px;
         height: 116px;
     }
 
@@ -76,7 +86,7 @@
 
 @media (min-width: 1860px) {
     .cards {
-        width: 1595px;
+        margin-top: 80px;
         height: 154px;
     }
 

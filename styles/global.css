@@ -5,18 +5,18 @@
     /* colors */
     --clr-main: #f5a52c; 
     --clr-second: #e49826;
-    --clr-third: #FFF9F0;
      
     --clr-titles: #1A1A1A; 
     --clr-text: #262626;
     --clr-white100: #FFFFFF;
-    --clr-white99: #ededed;
+    --clr-white99: #FCFCFD;
     --clr-white97: #F7F7F8; 
     --clr-white95: #F1F1F3; 
 
     --clr-muted: #4C4C4D;
 
     --clr-gray40: #656567;
+    --clr-gray15:  #262626;
     /* sizes */
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
@@ -53,12 +53,12 @@ body {
 } 
 
 .container:not(:first-child) {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 @media (min-width: 750px) {
     .container:not(:first-child) {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 }
 @media (min-width: 1400px) {
@@ -71,6 +71,66 @@ body {
         margin-top: 80px;
     }
 } 
+
+
+.main-title {
+    font-size: 28px;
+    height: 42px;
+    color:  #262626;
+}
+
+.main-description {
+    font-size: 14px;
+    color: #59595A;
+    margin-top: 4px;
+}
+
+.main_btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--clr-white100);
+    color: #262626;
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1400px) {
+    .main-title {
+        font-size: 38px;
+        height: 57px;
+    }
+
+    .main-description {
+        font-size: 16px;
+        max-width: 85ch;
+    }
+
+    .main_btn {
+        background-color: var(--clr-white100);
+        font-size: 16px;
+        border: 7px;
+        padding: 16px 22px;
+    }
+}
+
+@media (min-width: 1860px) {
+    .main-title {
+        font-size: 48px;
+        height: 72px;
+    }
+
+    .main-description {
+        font-size: 18px;
+        max-width: 95ch;
+    }
+
+    .main_btn {
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 18px 24px;
+    }
+}
 
 img,
 picture,
@@ -94,13 +154,12 @@ button {
     color: inherit;
     cursor: pointer;
     border-radius: 6px;
+    padding: 0.5em 1em;
 }
 
 .btn {
     background-color: var(--clr-main);
     color: var(--clr-white100);
-    padding: 0.125em 1.25em;
-    transition: background-color 0.3s;
 }
 
 .btn:hover {
@@ -110,40 +169,15 @@ button {
 .button {
     background-color: var(--clr-white100);
     color: var(--clr-text);
-    padding: 0.125em 1.25em;
-    transition: background-color 0.3s;
 }
 
 .button:hover {
     background-color: var(--clr-white99);
 }
 
-.special-transition, .moving-transition, .special-transition-orange {
-    transition: all 0.3s;
-}
-
-.special-transition:hover {
-    background-color: var(--clr-white95);
-}
-
-.moving-transition:hover {
-    background-color: var(--clr-white95);
-    padding: 1px ;
-}
-
 .special-transition-orange:hover {
     background-color: var(--clr-second);
 }
-
- 
-p {
-    color: var(--clr-text);
-}
-
-strong {
-    color: var(--clr-white100);
-    font-weight: 900;
-}  
 
 body::-webkit-scrollbar {
     width: 8px;
@@ -159,10 +193,7 @@ body::-webkit-scrollbar {
   }
 
   .fadeIn {
-    animation-name: fade-in;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation: fade-in 0.3s ease-in-out 1;
 }
 
 @keyframes fade-in {

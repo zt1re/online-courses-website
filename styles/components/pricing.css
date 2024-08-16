@@ -1,36 +1,21 @@
-.pricing-title {
-    color: var(--clr-titles);
-    font-size: var(--size-xl); 
-}
-
-.pricing-description {
-    color: var(--clr-muted);
-    font-size: var(--size-sm);
-    margin: 20px 0;
-}
-
-.flex {
+.main-btns_container {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-.pricing-btns {
-    display:inline-block;    
-    margin-inline: auto;
-    font-size: var(--size-sm);
+.main-btns {
     background-color: var(--clr-white100);
     border-radius: 8px;
     padding: 0.75em;
 }
 
-.pricing-btns > button { 
-    padding: 0.75em 1.5em;
-    border-radius: 6px;
-    font-weight: bold;
+.btn2 {
+    padding: 12px 18px;
 }
 
-.pricing-btn1 {
-    background-color: var(--clr-main);
+.btn2:hover {
+    background-color: var(--clr-white95);
 }
 
 .pricing-section2 {
@@ -53,7 +38,8 @@
 }
 
 .pricing-plan {
-    background-color: var(--clr-third);
+    background-color: #FFF9F0;
+    border: 1px solid #FFEACC;
     border-radius: 4px;
     padding: 0.5em 1.5em;
     text-align: center;
@@ -80,10 +66,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .pricing-features {
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -113,16 +100,6 @@
     font-weight: bold;
 }
 
-@media (min-width: 790px) {
-    .pricing-title {
-        font-size: var(--size-2xl);
-    }
-    
-    .pricing-description, .pricing-btn {
-        font-size: var(--size-base);  
-    }
-}
-
 @media (min-width: 1024px) {
     .pricing-section2 {
         flex-direction: row;
@@ -138,39 +115,24 @@
 }
 
 @media (min-width: 1400px) {
-    .pricing-title {
-        font-size: var(--size-3xl);
+    .pricing-description {
+        max-width: 75ch;
     }
 
-    .pricing-description, .pricing-btns {
-        font: var(--size-lg);
-        max-width: 85ch;
+    .main-btns_container {
+        margin-top: 0;
     }
 
     .pricing-section1 {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-    .pricing-btns {
-        align-self: flex-end;
-    }
-
-    .pricing-btns > button {
-        width: 114px;
-    }
 }
 
 @media (min-width: 1860px) {
-    .pricing-title {
-        font-size: var(--size-4xl);
-    }
-    
-    .pricing-description, .pricing-btn {
-        font-size: var(--size-lg); 
-        max-width: 95ch; 
+    .pricing-description {
+        max-width: 85ch; 
     }
 }
 
