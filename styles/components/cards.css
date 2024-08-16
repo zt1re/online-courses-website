@@ -4,6 +4,7 @@
 
 .cards {
     width: 90%;
+    max-width: 1500px;
     margin: 50px auto;
     height: 94px;
     background-color: var(--clr-white100);

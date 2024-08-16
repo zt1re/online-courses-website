@@ -66,12 +66,16 @@
     gap: 14px;
 }
 
+.socials-btn {
+    padding: 0;
+}
+
 .socials-btn > svg {
     fill: #F7F7F8;
 }
 
 .socials-btn > svg:hover {
-    fill: var(--clr-white95);
+    fill: var(--clr-white90);
 }
 
 .footer-seperator {

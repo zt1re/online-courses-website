@@ -11,7 +11,8 @@
     --clr-white100: #FFFFFF;
     --clr-white99: #FCFCFD;
     --clr-white97: #F7F7F8; 
-    --clr-white95: #F1F1F3; 
+    --clr-white95: #F1F1F3;
+    --clr-white90: #E4E4E7; 
 
     --clr-muted: #4C4C4D;
 
@@ -172,7 +173,7 @@ button {
 }
 
 .button:hover {
-    background-color: var(--clr-white99);
+    background-color: var(--clr-white95);
 }
 
 .special-transition-orange:hover {
@@ -190,6 +191,10 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: var(--clr-slate50);
     outline: 1px solid --clr-slate50;
+  }
+
+  * {
+    transition: all 0.3s;
   }
 
   .fadeIn {

@@ -2,7 +2,7 @@
     margin: 30px 16px 10px;
 }
 
-.header-title, .nav-bar_btns {
+.top-banner_title, .nav-bar_btns {
     font-size: 14px;
 }
 
@@ -12,6 +12,10 @@
     color: var(--clr-white100);
     border-radius: 6px;
     padding: 0.5em 1em;
+}
+
+.top-banner_btn {
+    padding: 0.3em;
 }
 
 .title_container {
@@ -46,7 +50,11 @@
 }
 
 .bars-btn:hover {
-    background-color: var(--clr-white95);
+    background-color: var(--clr-white90);
+}
+
+.sign-up_btn:hover {
+    background-color: var(--clr-white90);
 }
 
 @media (min-width: 1400px) {
@@ -78,7 +86,7 @@
 }
 
 @media (min-width: 1860px) {
-    .header-title, .nav-bar_btns {
+    .top-banner_title, .nav-bar_btns {
         font-size: 18px;
     }
 
