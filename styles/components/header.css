@@ -46,6 +46,10 @@
     gap: 20px;
 }
 
+.nav-bar_btns > button {
+    font-weight: 500;
+}
+
 .bars-btn {
     padding: 0.2em 0.4em 0;
 }
@@ -59,7 +63,7 @@
 }
 
 @media (min-width: 403px) {
-    .top-banner_title {
+    .top-banner_title, .nav-bar_btns > button {
         font-size: 14px;
     }
 }
