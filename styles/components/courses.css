@@ -1,10 +1,5 @@
-.courses-description, .courses-btn {
-    margin-bottom: 15px;
-}
-
-.courses-btn {
-    background-color: var(--clr-white95);
-    color: var(--clr-text);
+.courses-section2 {
+    margin-top: 15px;
 }
 
 .course-box {
@@ -120,6 +115,10 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+    }
+
+    .courses-section2 {
+        margin-top: 60px;
     }
 
     .course-box_info-container > span {
