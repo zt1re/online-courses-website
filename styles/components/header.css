@@ -3,10 +3,11 @@
 }
 
 .top-banner_title, .nav-bar_btns {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .top-banner {
+    width: 100%;
     height: 50px;
     background-color: var(--clr-main);
     color: var(--clr-white100);
@@ -55,6 +56,12 @@
 
 .sign-up_btn:hover {
     background-color: var(--clr-white90);
+}
+
+@media (min-width: 403px) {
+    .top-banner_title {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 1400px) {

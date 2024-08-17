@@ -11,7 +11,7 @@
 }
 
 .btn2 {
-    padding: 12px 18px;
+    padding: 8px 18px;
 }
 
 .btn2:hover {
@@ -22,7 +22,7 @@
     background-color: var(--clr-white100);
     border-radius: 12px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -127,6 +127,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .pricing-section2 {
+        margin-top: 60px;
     }
 }
 

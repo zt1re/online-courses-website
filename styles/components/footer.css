@@ -47,8 +47,13 @@
     color: var(--clr-muted);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 6px;
+}
+
+.item2-btns > button {
+    padding: 0;
 }
 
 .item2-btn:hover {
